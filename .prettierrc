@@ -1,0 +1,22 @@
+{
+	"tabWidth": 4,
+	"singleQuote": true,
+	"useTabs": true,
+	"semi": false,
+	"overrides": [
+		{
+			"files": ["*.yml", "*.yaml"],
+			"options": {
+				"useTabs": false,
+				"tabWidth": 2
+			}
+		},
+		{
+			"files": ["package.json"],
+			"options": {
+				"useTabs": false,
+				"tabWidth": 2
+			}
+		}
+	]
+}
