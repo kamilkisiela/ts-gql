@@ -1,10 +1,10 @@
-import { User } from '../types'
+import { Resolvers } from '../types'
 import { getMockUser } from '../../mocks'
 
-const resolvers: any = {
+const resolvers: Resolvers = {
 	User: {
-		id: (user: User) => user.id,
-		name: (user: User) => user.name || ''
+		id: user => user.id,
+		name: user => user.name || ''
 	},
 	Query: {
 		currentUser: getMockUser

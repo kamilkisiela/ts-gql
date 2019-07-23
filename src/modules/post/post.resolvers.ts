@@ -1,11 +1,11 @@
-import { Post } from '../types'
+import { Resolvers } from '../types'
 import { getMockPost, getMockUser } from '../../mocks'
 
-const resolvers: any = {
+const resolvers: Resolvers = {
 	Post: {
-		id: (post: Post) => post.id,
-		title: (post: Post) => post.title || '',
-		body: (post: Post) => post.body || '',
+		id: post => post.id,
+		title: post => post.title || '',
+		body: post => post.body || '',
 		user: getMockUser
 	},
 	User: {
