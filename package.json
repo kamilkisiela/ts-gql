@@ -27,7 +27,7 @@
   "scripts": {
     "start": "nodemon --exec ts-node src/server.ts",
     "watch-codegen": "concurrently \"nodemon src/server.ts\" \"yarn generate-types --watch\"",
-    "prestart": "yarn generate-types",
-    "generate-types": "graphql-codegen"
+    "prestart": "yarn generate",
+    "generate": "graphql-codegen"
   }
 }

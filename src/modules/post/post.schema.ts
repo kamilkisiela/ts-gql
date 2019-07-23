@@ -12,7 +12,7 @@ export default gql`
 		body: String
 	}
 
-	type Query {
+	extend type Query {
 		allPosts: [Post]
 	}
 `
