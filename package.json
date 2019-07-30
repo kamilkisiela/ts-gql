@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A server written in TypeScript using Express and Apollo GraphQL.",
   "dependencies": {
-    "@graphql-modules/core": "^0.7.8",
+    "@graphql-modules/core": "0.7.9-alpha-f8fbda0.15+f8fbda0",
     "apollo-server-express": "^2.7.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
@@ -28,6 +28,7 @@
     "start": "nodemon --exec ts-node src/server.ts",
     "watch-codegen": "concurrently \"nodemon src/server.ts\" \"yarn generate-types --watch\"",
     "prestart": "yarn generate",
-    "generate": "graphql-codegen"
+		"generate": "graphql-codegen",
+		"build": "tsc"
   }
 }

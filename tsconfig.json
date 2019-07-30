@@ -16,6 +16,7 @@
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
 		"allowSyntheticDefaultImports": false,
+		"skipLibCheck": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true
 	},
